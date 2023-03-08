@@ -8,6 +8,9 @@ module.exports = (sequelize, DataTypes) => {
             type: DataTypes.TEXT,
             allowNull: false,
         },
-    });
+    },{
+    timestamps: false, // disables createdAt and updatedAt columns
+  });
+    
     return Diseases;
 }
