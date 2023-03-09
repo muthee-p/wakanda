@@ -43,7 +43,7 @@ const Register = () =>{
 			<input type='email' name='email' placeholder='eg. johnsnow@kandamail.com' />
 
 			<button type='submit'>Submit</button>
-			
+			</form>
 		</div>
 		)
 }

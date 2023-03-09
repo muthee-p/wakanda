@@ -22,7 +22,7 @@ function Drugs() {
     <div>
       <h1>{selectedTopic.title}</h1>
 
-        <p>{selectedTopic.paragraph_one}</p>
+        <p className='mt-[1rem]'>{selectedTopic.paragraph_one}</p>
 
 		<p>{selectedTopic.paragraph_two}</p>
 		<p>{selectedTopic.paragraph_three}</p>

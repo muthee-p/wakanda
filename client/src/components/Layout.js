@@ -8,15 +8,16 @@ const Layout = () => {
   return (
     <div className="flex justify-around">
     	<Nav />
-    	<div className="w-[60%] mt-[3rem]">
-        <SideBar />
-
-    		<Outlet />
-
-        <QuickNavs />
+    	<div className="flex justify-around mt-[3rem] p-6">
+        <SideBar /><QuickNavs />
+        <div className=' w-[63%] min-w[63%] min-h-full p-4 pt-8 text-m'>
+    		<Outlet /><Footer />
+          </div>
+        
+        
     	</div>
     	
-    	<Footer />
+    	
     </div>
     )
 }

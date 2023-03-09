@@ -2,8 +2,9 @@ import React from 'react';
 
 const Footer = () =>{
 	return(
-		<div className=' fixed bottom-0'>
+		<div className='bottom-0 w-full min-w-full '>
 			<p>Footer</p>
+
 		</div>
 		)
 }

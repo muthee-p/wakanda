@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import './App.css';
 import {Routes, Route} from "react-router-dom";
 import Layout from "./components/Layout";
+import {Homepage, Register, Login} from "./components/public"
 import {Mental, Emergency, Insurance, Facilities, Drugs, Policies, InsuranceForm} from "./components/health";
 
 function App() {
@@ -9,6 +10,7 @@ function App() {
   return (
     <div className="App">
       <Routes>
+      <Route path="/" element={<Homepage />} />
       <Route path="/" element={<Layout />} >
       <Route path="health/mental" element={<Mental />} />
       <Route path="health/emergency" element={<Emergency />} />
@@ -18,6 +20,8 @@ function App() {
       <Route path="health/drugs" element={<Drugs />} />
       	
       </Route>
+      <Route path="/register" element={<Register />} />
+      <Route path="/login" element={<Login />} />
       <Route path="insuranceform" element={<InsuranceForm />} />
       </Routes>
     </div>

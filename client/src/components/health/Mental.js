@@ -20,16 +20,15 @@ function Mental() {
 
   return (
     <div>
-      <h1>{selectedTopic.title}</h1>
-      <br></br>
+      <h1 className='text-4xl'>{selectedTopic.title}</h1>
 
-        <p>{selectedTopic.paragraph_one}</p>
+        <p className='mt-[1rem] block'>{selectedTopic.paragraph_one}</p>
 
-		<p>{selectedTopic.paragraph_two}</p>
-		<p>{selectedTopic.paragraph_three}</p>
-		<p>{selectedTopic.paragraph_four}</p>
-		<p>{selectedTopic.paragraph_five}</p>
-		<p>{selectedTopic.paragraph_six}</p>
+		<p className='mt-[1rem]'>{selectedTopic.paragraph_two}</p>
+		<p className='mt-[1rem]'>{selectedTopic.paragraph_three}</p>
+		<p className='mt-[1rem]'>{selectedTopic.paragraph_four}</p>
+		<p className='mt-[1rem]'>{selectedTopic.paragraph_five}</p>
+		<p className='mt-[1rem]'>{selectedTopic.paragraph_six}</p>
       
     </div>
   );
