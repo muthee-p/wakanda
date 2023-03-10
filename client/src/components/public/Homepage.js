@@ -1,15 +1,17 @@
 import React, {useState} from 'react';
-import { community, fairGreen, maryland, pets, top, trade} from '../../assets';
+import { community, comm, fairGreen, maryland, pets, top, trade} from '../../assets';
 import {Link} from "react-router-dom";
+import {Nav } from '../shared';
 
 const Homepage = () =>{
 	
 
   return (
     <div>
-    <div className='min-h-[100vh] p-6 flex justify-between'>
-    	<img src={community} alt='community' className='w-[40%] h-[30%]'/>
-    	<div className='w-[60%]'>
+    <Nav />
+    <div className='min-h-[100vh] p-6 flex justify-between items-center'>
+    	<img src={comm} alt='community' className='w-[50%] h-[40%]'/>
+    	<div className='w-[50%]'>
       		<h1 className='text-6xl'>Welcome</h1>
       			<p className='mt-8 mb-8'>Welcome to the official website of the Government of Wakanda,
        				where we strive to provide our citizens with easy access to all the necessary information and

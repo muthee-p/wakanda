@@ -21,21 +21,20 @@ function Insurance() {
 
   return (
     <div>
-      <h1>{selectedTopic.title}</h1>
+      <h1 className='text-4xl'>{selectedTopic.title}</h1>
 
-        <p>{selectedTopic.paragraph_one}</p>
+      <p className='mt-4'>{selectedTopic.paragraph_one}</p>
+      <p className='mt-4'>{selectedTopic.paragraph_two}</p>
+      <p className='mt-4'>{selectedTopic.paragraph_three}</p>
+      <p className='mt-4'>{selectedTopic.paragraph_four}</p>
+      <p className='mt-4'>{selectedTopic.paragraph_five}</p>
+      <p className='mt-4'>{selectedTopic.paragraph_six}</p>
 
-		<p>{selectedTopic.paragraph_two}</p>
-		<p>{selectedTopic.paragraph_three}</p>
-		<p>{selectedTopic.paragraph_four}</p>
-		<p>{selectedTopic.paragraph_five}</p>
-		<p>{selectedTopic.paragraph_six}</p>
 
+    <h5 className='mt-4 mb-4'>Follow the link to get your health insurace</h5>
 
-    <h5>Follow the link to get your health insurace</h5>
-
-    <button>
-      <Link to='health/insuranceform'>Health Insurance Application</Link>
+    <button className='bg-amber-500 p-3 rounded-3xl'>
+      <Link to='insuranceform'>Health Insurance Application</Link>
     </button>
       
     </div>

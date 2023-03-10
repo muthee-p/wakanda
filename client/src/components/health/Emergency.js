@@ -19,16 +19,16 @@ function Emergency() {
   const selectedTopic = healthTopics.find(topic => topic.id === selectedTopicId);
 
   return (
-    <div>
-      <h1>{selectedTopic.title}</h1>
+   <div>
+      <h1 className='text-4xl mb-8'>{selectedTopic.title}</h1>
 
-        <p>{selectedTopic.paragraph_one}</p>
+      <p className='mt-4 block'>{selectedTopic.paragraph_one}</p>
 
-		<p>{selectedTopic.paragraph_two}</p>
-		<p>{selectedTopic.paragraph_three}</p>
-		<p>{selectedTopic.paragraph_four}</p>
-		<p>{selectedTopic.paragraph_five}</p>
-		<p>{selectedTopic.paragraph_six}</p>
+    <p className='mt-4'>{selectedTopic.paragraph_two}</p>
+    <p className='mt-4'>{selectedTopic.paragraph_three}</p>
+    <p className='mt-4'>{selectedTopic.paragraph_four}</p>
+    <p className='mt-4'>{selectedTopic.paragraph_five}</p>
+    <p className='mt-4'>{selectedTopic.paragraph_six}</p>
       
     </div>
   );

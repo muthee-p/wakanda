@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 
-function Mental() {
+function Ecommerce() {
   const [healthTopics, setHealthTopics] = useState(null);
-  const [selectedTopicId, setSelectedTopicId] = useState(1);
+  const [selectedTopicId, setSelectedTopicId] = useState(3);
 
   useEffect(() => {
-    axios.get('http://localhost:3001/health').then((response) =>{
+    axios.get('http://localhost:3001/trades').then((response) =>{
       
       setHealthTopics(response.data);
     });
@@ -34,4 +34,4 @@ function Mental() {
   );
 }
 
-export default Mental;
+export default Ecommerce;
